@@ -1,4 +1,4 @@
-## Create an Android project
+# Create an Android project
 This lesson shows you how to create a new Android project with Android Studio and describes some of the files in the project.<br />
 First, be sure you have installed the latest version of Android Studio.[Download Android Studio here.](https://developer.android.com/studio/)
 1. In the Welcome to **Android Studio window**, click **Start a new Android Studio project**.
@@ -36,18 +36,18 @@ The manifest file describes the fundamental characteristics of the app and defin
 You'll see two files with this name: one for the project and one for the "app" module. Each module has its own build.gradle file, but this project currently has just one module. You'll mostly work with the module's build.gradle file to configure how the Gradle tools compile and build your app. For more information about this file, see Configure Your Build.<br />
 
 ## Run Your App
-**Run on a real device**<br /><br />
+### **Run on a real device**<br /><br />
 Set up your device as follows:<br />
 
 1. Connect your device to your development machine with a USB cable. If you're developing on Windows, you might need [install the appropriate USB driver](https://developer.android.com/studio/run/oem-usb).
 2. Enable **USB debugging** in the **Developer options** as follows.<br />
 First, you must enable the developer options:
 
-a. Open the **Settings** app.<br />
-b. (Only on Android 8.0 or higher) Select **System**.<br />
-c. Scroll to the bottom and select **About phone**.<br />
-d. Scroll to the bottom and tap **Build number** 7 times.<br />
-e. Return to the previous screen to find **Developer options** near the bottom.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Open the **Settings** app.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. (Only on Android 8.0 or higher) Select **System**.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. Scroll to the bottom and select **About phone**.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d. Scroll to the bottom and tap **Build number** 7 times.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e. Return to the previous screen to find **Developer options** near the bottom.<br />
 
 Open **Developer options**, and then scroll down to find and enable **USB debugging**.<br />
 
@@ -58,7 +58,7 @@ Run the app on your device as follows:<br />
 <img src="https://developer.android.com/training/basics/firstapp/images/run-device_2x.png">
 Android Studio installs the app on your connected device and starts it. You should now see "Hello World!" displayed in the app running on your device.<br />
 
-**Run on an emulator**<br /><br />
+### **Run on an emulator**<br /><br />
 Run the app on an emulator as follows:<br />
 
 1. In Android Studio, click the **app** module in the **Project** window and then select **Run > Run** (or click **Run**  in the toolbar).<br />
