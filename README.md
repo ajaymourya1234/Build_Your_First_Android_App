@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+## Create an Android project
+This lesson shows you how to create a new Android project with Android Studio and describes some of the files in the project.<br />
+First, be sure you have installed the latest version of Android Studio.[Download Android Studio here.](https://developer.android.com/studio/)
+1. In the Welcome to **Android Studio window**, click **Start a new Android Studio project**.
 
-You can use the [editor on GitHub](https://github.com/ajaymourya1234/Build_Your_First_Android_App/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+<img src="https://developer.android.com/training/basics/firstapp/images/studio-welcome_2x.png">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Or if you have a project opened, select **File > New Project**.
 
-### Markdown
+2. In the **Create New Project** window, enter the following values:
+- **Application Name**: "My First App"
+- **Company Domain**: "example.com"<br />
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+You might want to change the project location. Also, if you want to write a Kotlin app, check the **Include Kotlin support** checkbox. Leave the other options as they are.
 
-```markdown
-Syntax highlighted code block
+3. Click **Next**.
+4. In the **Target Android Devices** screen, keep the default values and click **Next**.
+5. In the **Add an Activity to Mobile** screen, select **Empty Activity** and click **Next**.
+6. In the **Configure Activity** screen, keep the default values and click **Finish**.<br />
+After some processing, Android Studio opens the IDE.
+<img src="https://developer.android.com/training/basics/firstapp/images/studio-editor_2x.png">
 
-# Header 1
-## Header 2
-### Header 3
+Now take a moment to review the most important files.<br />
+First, be sure the **Project** window is open (select **View > Tool Windows > Project**) and the **Android** view is selected from the drop-down list at the top of that window. You can then see the following files:<br />
 
-- Bulleted
-- List
+**app > java > com.example.myfirstapp > MainActivity**<br />
+This is the main activity (the entry point for your app). When you build and run the app, the system launches an instance of this Activity and loads its layout.<br />
 
-1. Numbered
-2. List
+**app > res > layout > activity_main.xml**<br />
+This XML file defines the layout for the activity's UI. It contains a TextView element with the text "Hello world!".<br />
 
-**Bold** and _Italic_ and `Code` text
+**app > manifests > AndroidManifest.xml**<br />
+The manifest file describes the fundamental characteristics of the app and defines each of its components.<br />
 
-[Link](url) and ![Image](src)
-```
+**Gradle Scripts > build.gradle**<br />
+You'll see two files with this name: one for the project and one for the "app" module. Each module has its own build.gradle file, but this project currently has just one module. You'll mostly work with the module's build.gradle file to configure how the Gradle tools compile and build your app. For more information about this file, see Configure Your Build.<br />
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ajaymourya1234/Build_Your_First_Android_App/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Run Your App
+Run on a real device
